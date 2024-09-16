@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+      <div class="logo">M. Wade</div>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#supports">Supports</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+</nav>
+
+<nav id="hamburger-nav">
+    <div class="logo">M. Wade</div>
+    
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#supports"onclick="toggleMenu()">Supports</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wade</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2"onclick="window.open('Resume.pdf')">
+            Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+            </button>
+        </div>
+
+        <div id="socials-container">
+            <img src="asset2.webp" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/m-w-989bbb273'"/>
+            <img src="asset3.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/mdwade420'"/>
+        </div>
+      </div>
+</section>
+
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+        <img src="asset4.webp" alt="Profile picture"/>
+    </div>
+    
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+            <img src="asset5.jpeg" alt="Experience icon" class="icon"/><br>
+            <h3>Experience</h3><br>
+            <p>1+ years <br />Frontend Development</p><br>
+            </div>
+
+            <div class="details-container">
+            <img src="asset6.jpeg" alt="Education icon" class="icon"/><br>
+            <h3>Education</h3><br>
+            <p>B.Sc. Bachelors Degree</p><br>
+            </div>
+
+        </div>
+                
+        <div class="text-container">
+            <p id="changingText">
+            Hi, I'm a student attending for my bachalors in information management and systems. 
+            I'm an avid learner of code and have a strong personal interest in learning lanuages and culture.  
+            I've done 5 years of spanish, 2 or german and am currently learning arabic, gujarati, and urdu.
+            I enjoy being outdoors rather it's hiking, rock-climbing, or go-carting.
+            </p>
+        </div>
+    </div>
+
+    <img src="asset8.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
+
+<section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>HTML</h3><p>Experienced</p></div>
+                </article>
+             
+                <article><img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>CSS</h3><p>Experienced</p></div>
+                </article>
+                
+                <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon" />
+                <div><h3>JavaScript</h3><p>Basic</p></div>
+                </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>Java</h3><p>Basic</p></div>
+                </article>
+                </div>
+
+                <div class="article-container">
+                <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>Python</h3><p>Basic</p></div>
+                </article>
+                </div>
+
+                <div class="article-container">
+                <article>
+                <img src="asset9.jpeg" alt="Experience icon" class="icon"/>
+                <div><h3>SQL</h3><p>Basic</p></div>
+                </article>
+                </div>
+          </div>
+        </div>
+      </div>
+      <img src="asset8.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#supports'"/>
+</section>
+
+      <section id="supports">
+        <h1 class="title">Supports</h1>
+        <div class="supports-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                <h2 class="supports-sub-title"></h2>
+                    <div class="article-container">
+                        <p class="paragraphs">“If the numbers we see in domestic violence were applied to terrorism or gang violence, the entire country would be up in arms, and it would be the lead story on the news every night.“ - Representative Mark Green</p>
+                        <a onclick="location.href='https://www.womenagainstabuse.org/donate'"><p><h3>Women Against Abuse.Donte</h3></p></a>
+                        <a onclick="location.href='https://womenforafghanwomen.org'"><p><h3>Women of Afganistan.Donate</h3></p></a>
+                        <a onclick="location.href='https://ncadv.org/donate'"><p><h3>National Coalition Against Domestic Violence.Donate</h3></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="supports-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                <h2 class="supports-sub-title"></h2>
+                <p class="paragraphs">“To leave the world better than you found it, sometimes you have to pick up other people’s trash.” — Bill Nye</p>
+                    <div class="article-container">
+                        <a onclick="location.href='https://www.spartanburgconservation.org'"><p><h3>Spartanburg Conservation.Donate</h3></p></a>
+                        <a onclick="location.href='https://www.conesteepreserve.org/give'"><p><h3>Conestee Preserve.Donate</h3></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="asset8.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="asset11.jpeg" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:wademacahi@gmail.com">wademacahi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="asset2.webp" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/m-w-989bbb273/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#supports">Supports</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 M. Wade. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
